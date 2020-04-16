@@ -926,5 +926,6 @@ const char *scfg_err_msg(struct scfg *cfg) {
 #undef hash_table_delete
 #undef hash_table_traverse
 #undef GET_ENTRY
+#undef SCFG_SET_ERR
 
 #endif
