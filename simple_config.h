@@ -721,6 +721,8 @@ static void scfg_validate_entry(struct scfg *cfg, scfg_entry_t *entry, char *key
         return;
     }
 
+    valid = 0;
+
     switch (entry->kind) {
         case SCFG_KIND_BOOL:
             valid = ((scfg_validate_bool_fn_t)entry->validate)(cfg, *entry->baddr);
